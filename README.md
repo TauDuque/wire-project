@@ -1,2 +1,2 @@
 # wire-project
-Personal project: a brazilian pan page of the tv show "the Wire"
+Personal project: a brazilian fan page of the tv show "the Wire"
