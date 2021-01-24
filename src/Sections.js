@@ -1,3 +1,6 @@
+import "./App.css";
+import "./script";
+
 const Sections = () => {
   return (
     <div>

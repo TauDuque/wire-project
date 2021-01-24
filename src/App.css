@@ -343,6 +343,11 @@ section#home h2 {
   color: var(--primaryColor);
   border-bottom: 1px solid var(--primaryColor);
 }
+
+section#home span {
+  height: 92vh;
+}
+
 section#home {
   align-items: center;
 }
@@ -363,11 +368,18 @@ section#quarta {
   background-color: var(--navColor5);
 }
 
-/* Media Query: Large Smartphone (Vertical) */
+@media (max-width: 2050px) {
+  section#home span {
+    height: 88vh;
+  }
+}
+
+/* Media Query: Large Smartphone (vertical) */
 @media (max-width: 600px) {
   section#home span {
     background-image: url(https://i.pinimg.com/564x/f8/5b/7a/f85b7a11f0aac54b8bf1a0e8a1f01aa7.jpg);
     opacity: 1;
+    height: 90vh;
   }
 
   .menu-bars {
