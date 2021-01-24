@@ -1,38 +1,377 @@
-.App {
+:root {
+  --primaryColor: #fff;
+  --navColor1: #21292c;
+  --navColor2: #121721;
+  --navColor3: #0a0e19;
+  --navColor4: #141502;
+  --navColor5: #031506;
+}
+
+/* slider */
+
+.slide:after {
+  position: fixed;
+  width: 20%;
+  height: 20%;
+  top: 20px;
+  left: 0px;
+  z-index: 1;
+}
+
+.slide li span {
+  width: 100%;
+  height: 93%;
+  position: absolute;
+  top: 45px;
+  left: 0px;
+  color: transparent;
+  background-size: cover;
+  background-position: 85% 15%;
+  background-repeat: none;
+  opacity: 0;
+  z-index: 1;
+  animation: imageAnimation 89s linear infinite 0s;
+}
+
+section ul {
+  list-style: none;
+}
+
+.slide li:nth-child(1) span {
+  background-image: url(https://wallpapercave.com/wp/wp1941987.jpg);
+}
+.slide li:nth-child(2) span {
+  background-image: url(https://wallpapercave.com/wp/wp1941953.jpg);
+  animation-delay: 6s;
+}
+.slide li:nth-child(3) span {
+  background-image: url(https://wallpapercave.com/wp/wp1941993.jpg);
+  animation-delay: 12s;
+}
+.slide li:nth-child(4) span {
+  background-image: url(https://wallpapercave.com/wp/wp1942047.jpg);
+  animation-delay: 18s;
+}
+.slide li:nth-child(5) span {
+  background-image: url(https://wallpapercave.com/wp/wp1942010.jpg);
+  animation-delay: 24s;
+}
+.slide li:nth-child(6) span {
+  background-image: url(https://wallpapercave.com/wp/wp1942049.jpg);
+  animation-delay: 30s;
+}
+.slide li:nth-child(7) span {
+  background-image: url(https://wallpapercave.com/wp/wp1942216.jpg);
+  animation-delay: 36s;
+}
+.slide li:nth-child(8) span {
+  background-image: url(https://wallpapercave.com/wp/wp1942054.jpg);
+  animation-delay: 42s;
+}
+.slide li:nth-child(9) span {
+  background-image: url(https://wallpapercave.com/wp/wp1942078.jpg);
+  animation-delay: 48s;
+}
+.slide li:nth-child(10) span {
+  background-image: url(https://wallpapercave.com/wp/wp1942134.jpg);
+  animation-delay: 54s;
+}
+.slide li:nth-child(11) span {
+  background-image: url(https://wallpapercave.com/wp/wp1942136.jpg);
+  animation-delay: 60s;
+}
+.slide li:nth-child(12) span {
+  background-image: url(https://wallpapercave.com/wp/wp1942232.jpg);
+  animation-delay: 66s;
+}
+.slide li:nth-child(13) span {
+  background-image: url(https://wallpapercave.com/wp/wp1941994.jpg);
+  animation-delay: 72s;
+}
+
+@keyframes imageAnimation {
+  0% {
+    opacity: 0;
+    animation-timing-function: ease-in;
+  }
+  8% {
+    opacity: 1;
+    animation-timing-function: ease-out;
+  }
+  17% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #000;
+}
+
+/* --- Navigation Menu ------------------------------ */
+/* overlay */
+.overlay {
+  position: fixed;
+  z-index: 9;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  transform: translateX(-100vw);
+}
+
+.overlay-slide-right {
+  transition: all 0.4s ease-in-out;
+  transform: translateX(0);
+}
+
+.overlay-slide-left {
+  transition: all 0.8s ease-in-out;
+  transform: translateX(-100vw);
+}
+
+/* nav menu items */
+nav,
+nav ul {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  list-style: none;
+}
+
+nav ul li {
+  height: 16.66%;
+  overflow: hidden;
+}
+
+nav li a {
+  position: relative;
+  top: 45%;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-decoration: none;
+  display: block;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav li a:hover {
+  transform: scale(1.1);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+nav li a::before {
+  content: "";
+  width: 25vw;
+  height: 3px;
+  background-color: #fff;
+  position: absolute;
+  top: 47.5%;
+  left: 0;
+  opacity: 0;
+}
+nav li a::after {
+  content: "";
+  width: 25vw;
+  height: 3px;
+  background-color: #fff;
+  position: absolute;
+  top: 47.5%;
+  right: 0;
+  opacity: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+nav li a:hover::before {
+  opacity: 1;
 }
 
-.App-link {
-  color: #61dafb;
+nav li a:hover::after {
+  opacity: 1;
 }
 
-@keyframes App-logo-spin {
+nav li:nth-of-type(1) {
+  background-color: var(--navColor1);
+}
+nav li:nth-of-type(2) {
+  background-color: var(--navColor2);
+}
+nav li:nth-of-type(3) {
+  background-color: var(--navColor3);
+}
+nav li:nth-of-type(4) {
+  background-color: var(--navColor4);
+}
+nav li:nth-of-type(5) {
+  background-color: var(--navColor5);
+}
+nav li:nth-of-type(6) {
+  background-color: var(--navColor1);
+}
+
+/* animação slide in com delay p/ cada item nav */
+.slide-in-1 {
+  animation: slide-in 0.4s linear 0.2s both;
+}
+.slide-in-2 {
+  animation: slide-in 0.4s linear 0.4s both;
+}
+.slide-in-3 {
+  animation: slide-in 0.4s linear 0.6s both;
+}
+.slide-in-4 {
+  animation: slide-in 0.4s linear 0.8s both;
+}
+.slide-in-5 {
+  animation: slide-in 0.4s linear 1s both;
+}
+.slide-in-6 {
+  animation: slide-in 0.4s linear 1.2s both;
+}
+
+@keyframes slide-in {
   from {
-    transform: rotate(0deg);
+    transform: translateX(-100%);
   }
   to {
-    transform: rotate(360deg);
+    transform: translateX(0);
+  }
+}
+
+/* animação slide out com delay p/ cada item nav */
+.slide-out-1 {
+  animation: slide-out 0.4s linear 0.6s both;
+}
+.slide-out-2 {
+  animation: slide-out 0.4s linear 0.5s both;
+}
+.slide-out-3 {
+  animation: slide-out 0.4s linear 0.4s both;
+}
+.slide-out-4 {
+  animation: slide-out 0.4s linear 0.3s both;
+}
+.slide-out-5 {
+  animation: slide-out 0.4s linear 0.2s both;
+}
+.slide-out-6 {
+  animation: slide-out 0.4s linear 0.1s both;
+}
+
+@keyframes slide-out {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* --- Menu Bars ------------------------------------ */
+
+.menu-bars {
+  position: fixed;
+  top: 0.4rem;
+  right: 2rem;
+  z-index: 10;
+  display: inline;
+  cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 2px;
+  background-color: #fff;
+  margin: 8px 0;
+  transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+  transform: rotate(-45deg) translate(-7px, 8px);
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+  opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+  transform: rotate(45deg) translate(-6px, -8px);
+}
+
+/* --- Sections ------------------------------------ */
+
+section {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--primaryColor);
+}
+
+section#home h2 {
+  position: absolute;
+  z-index: 2;
+  top: 0.7px;
+  left: 1.8rem;
+  justify-content: start;
+  text-decoration: none;
+  font-size: 1rem;
+  padding-bottom: 7px;
+  color: var(--primaryColor);
+  border-bottom: 1px solid var(--primaryColor);
+}
+section#home {
+  align-items: center;
+}
+
+section#primeira {
+  background-color: var(--navColor2);
+}
+
+section#segunda {
+  background-color: var(--navColor3);
+}
+
+section#terceira {
+  background-color: var(--navColor4);
+}
+
+section#quarta {
+  background-color: var(--navColor5);
+}
+
+/* Media Query: Large Smartphone (Vertical) */
+@media (max-width: 600px) {
+  section#home span {
+    background-image: url(https://i.pinimg.com/564x/f8/5b/7a/f85b7a11f0aac54b8bf1a0e8a1f01aa7.jpg);
+    opacity: 1;
+  }
+
+  .menu-bars {
+    top: 0.5rem;
+    right: 1rem;
   }
 }
