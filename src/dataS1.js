@@ -4,7 +4,6 @@ const people = [
     image:
       "https://images.techhive.com/images/article/2014/12/hbo-the-wire-1-100533556-large.jpg",
     name: "Bunk, McNulty, Kima e Freamon",
-    title: "Investigam as Organizações Barksdale",
     quote:
       "Núcleo da força-tarefa responsável pela investigação de Avon e Stringer Bell, uma fusão entre detetives da homicídios e do departamento de narcóticos",
   },
@@ -13,7 +12,6 @@ const people = [
     image:
       "https://m.media-amazon.com/images/M/MV5BMGVkOGM3NzgtMTk0Yi00NTNiLTg1MGUtZjhjNzQyNDNlMTIwXkEyXkFqcGdeQXVyNjczODAwNDg@._V1_.jpg",
     name: "D'Angelo e Stringer Bell",
-    title: "Alguns membros das Organizações Barksdale",
     quote:
       "D'Angelo Barksdale é primo do líder Avon, acusado de homicídio foi libertado graças a estratégia e planejamento de Stringer Bell, um criminoso lido como diferente pelo fato de fazer faculdade de marketing e economia, além de não empreender métodos violentos, preferindo utilizar seu intelecto",
   },
@@ -22,7 +20,6 @@ const people = [
     image:
       "https://static.hollywoodreporter.com/sites/default/files/2014/10/Seth_Gilliam_Right_a_l.jpg",
     name: "Herc e Carver",
-    title: "Membros do Departamento de Narcóticos da Polícia de Baltimore",
     quote:
       "Policiais membros da força-tarefa que investiga Avon, preferem adotar métodos mais violentos a participar de investigações minunciosas baseadas em vigilância e inteligência, assim como já chegaram a roubar dinheiro do tráfico em atos de apreensão",
   },
