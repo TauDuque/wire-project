@@ -107,7 +107,6 @@ Slider
   text-align: center;
   position: relative;
   display: flex;
-  overflow: hidden;
 }
 .person-img {
   margin-top: 0;
@@ -160,30 +159,33 @@ article h4 {
   border-radius: var(--radius);
   cursor: pointer;
   transition: var(--transition);
-  overflow: hidden;
 }
 .prev:hover,
 .next:hover {
   background: var(--clr-primary-5);
-  overflow: hidden;
 }
 .prev {
-  overflow: hidden;
   left: 0;
 }
 .next {
   right: 0;
-  overflow: hidden;
 }
-@media (min-width: 600px) {
+@media (max-width: 600px) {
   .text {
     max-width: 45em;
-    font-size: 8px;
+    font-size: 10px;
   }
   .prev,
   .next {
     width: 2rem;
     height: 2rem;
+  }
+  .person-img {
+    object-fit: contain;
+    max-width: 320px;
+  }
+  article h4 {
+    margin-top: 10px;
   }
 }
 article {
@@ -195,7 +197,6 @@ article {
   height: 100%;
   opacity: 0;
   transition: var(--transition);
-  overflow: hidden;
 }
 article.activeSlide {
   opacity: 1;
