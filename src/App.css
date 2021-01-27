@@ -7,6 +7,11 @@
   --navColor5: #031506;
 }
 
+title {
+  font-size: x-large;
+  font-family: "Helvetica Neue", sans-serif;
+}
+
 /* slider */
 
 .slide:after {
@@ -346,6 +351,7 @@ section#home h2 {
   font-size: 1rem;
   padding-bottom: 7px;
   color: var(--primaryColor);
+  font-family: "Helvetica Neue", sans-serif;
   border-bottom: 1px solid var(--primaryColor);
 }
 
@@ -400,17 +406,8 @@ section#ultima {
 
 .season {
   box-sizing: border-box;
-  background: #fff;
-  justify-content: center;
   position: relative;
-  height: 75vh;
   width: 1020px;
-  margin-bottom: 100px;
-  padding: 1.5rem 2rem;
-  border-radius: 0.25rem;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s linear;
-  text-align: center;
   opacity: 0;
   overflow: hidden;
 }

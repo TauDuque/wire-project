@@ -218,13 +218,10 @@ article.nextSlide {
 .season {
   box-sizing: border-box;
   background: #fff;
-  justify-content: center;
   height: 85vh;
-  width: 1020px;
   margin-bottom: 1px;
   padding: 1.5rem 2rem;
   border-radius: 0.25rem;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  opacity: 0.94;
+  box-shadow: 0 8px 15px rgba(5, 5, 5, 0.7);
+  opacity: 0.88;
 }

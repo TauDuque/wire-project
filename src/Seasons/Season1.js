@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import "./Season.css";
-import "./App.css";
+import "../App.css";
 import { FiChevronRight, FiChevronLeft } from "react-icons/fi";
-import data from "./datas5";
+import data from "./dataS1";
 
-const Season5 = () => {
+const Season1 = () => {
   const [people, setPeople] = useState(data);
   const [index, setIndex] = useState(0);
 
@@ -60,4 +60,4 @@ const Season5 = () => {
   );
 };
 
-export default Season5;
+export default Season1;

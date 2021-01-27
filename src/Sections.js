@@ -1,10 +1,10 @@
 import "./App.css";
 import "./script";
-import Seasons from "./Seasons";
-import Season2 from "./Season2";
-import Season3 from "./Seanson3";
-import Season4 from "./Season4";
-import Season5 from "./Season5";
+import Season1 from "./Seasons/Season1";
+import Season2 from "./Seasons/Season2";
+import Season3 from "./Seasons/Seanson3";
+import Season4 from "./Seasons/Season4";
+import Season5 from "./Seasons/Season5";
 
 const Sections = () => {
   return (
@@ -57,7 +57,7 @@ const Sections = () => {
         <h1>Primeira Temporada</h1>
         <div className="sectioncontainer">
           <article className="season">
-            <Seasons />
+            <Season1 />
           </article>
         </div>
       </section>
