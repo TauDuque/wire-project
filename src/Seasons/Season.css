@@ -114,6 +114,7 @@ Slider
   height: 350px;
   object-fit: cover;
   box-shadow: var(--dark-shadow);
+  opacity: 1;
 }
 article h4 {
   margin-top: 5px;
@@ -216,12 +217,14 @@ article.nextSlide {
 }
 
 .season {
-  box-sizing: border-box;
   background: #fff;
   height: 85vh;
   margin-bottom: 1px;
   padding: 1.5rem 2rem;
   border-radius: 0.25rem;
   box-shadow: 0 8px 15px rgba(5, 5, 5, 0.7);
-  opacity: 0.88;
+  opacity: 0.82;
+  position: relative;
+  width: 1020px;
+  overflow: hidden;
 }

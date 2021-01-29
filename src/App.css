@@ -35,7 +35,7 @@ title {
   background-repeat: none;
   opacity: 0;
   z-index: 1;
-  animation: imageAnimation 89s linear infinite 0s;
+  animation: imageAnimation 70.5s linear infinite 0s;
 }
 
 section ul {
@@ -47,51 +47,51 @@ section ul {
 }
 .slide li:nth-child(2) span {
   background-image: url(https://wallpapercave.com/wp/wp1941953.jpg);
-  animation-delay: 6s;
+  animation-delay: 5.5s;
 }
 .slide li:nth-child(3) span {
   background-image: url(https://wallpapercave.com/wp/wp1941993.jpg);
-  animation-delay: 12s;
+  animation-delay: 10s;
 }
 .slide li:nth-child(4) span {
   background-image: url(https://wallpapercave.com/wp/wp1942047.jpg);
-  animation-delay: 18s;
+  animation-delay: 15s;
 }
 .slide li:nth-child(5) span {
   background-image: url(https://wallpapercave.com/wp/wp1942010.jpg);
-  animation-delay: 24s;
+  animation-delay: 20s;
 }
 .slide li:nth-child(6) span {
   background-image: url(https://wallpapercave.com/wp/wp1942049.jpg);
-  animation-delay: 30s;
+  animation-delay: 25s;
 }
 .slide li:nth-child(7) span {
   background-image: url(https://wallpapercave.com/wp/wp1942216.jpg);
-  animation-delay: 36s;
+  animation-delay: 30s;
 }
 .slide li:nth-child(8) span {
   background-image: url(https://wallpapercave.com/wp/wp1942054.jpg);
-  animation-delay: 42s;
+  animation-delay: 35s;
 }
 .slide li:nth-child(9) span {
   background-image: url(https://wallpapercave.com/wp/wp1942078.jpg);
-  animation-delay: 48s;
+  animation-delay: 40s;
 }
 .slide li:nth-child(10) span {
   background-image: url(https://wallpapercave.com/wp/wp1942134.jpg);
-  animation-delay: 54s;
+  animation-delay: 45s;
 }
 .slide li:nth-child(11) span {
   background-image: url(https://wallpapercave.com/wp/wp1942136.jpg);
-  animation-delay: 60s;
+  animation-delay: 50s;
 }
 .slide li:nth-child(12) span {
   background-image: url(https://wallpapercave.com/wp/wp1942232.jpg);
-  animation-delay: 66s;
+  animation-delay: 55s;
 }
 .slide li:nth-child(13) span {
   background-image: url(https://wallpapercave.com/wp/wp1941994.jpg);
-  animation-delay: 72s;
+  animation-delay: 60s;
 }
 
 @keyframes imageAnimation {
@@ -400,16 +400,6 @@ section#ultima {
 
 .section-handler {
   margin-top: -30px;
-}
-
-/* --- Seasons ------------------------------------ */
-
-.season {
-  box-sizing: border-box;
-  position: relative;
-  width: 1020px;
-  opacity: 0;
-  overflow: hidden;
 }
 
 @media (max-width: 2050px) {

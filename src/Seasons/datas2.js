@@ -13,7 +13,7 @@ const people = [
       "https://dvdbash.files.wordpress.com/2013/06/the-wire-tv-series-s2-e02-02-dvdbash-wordpress.jpg",
     name: "Avon e Stringer Bell",
     quote:
-      "Avon segue comandando as operações mas desta vez da cadeia, sendo assim Striner Bell, em liberdade, possui mais autonomia para gerir a organização do jeito que considera melhor",
+      "Avon segue comandando as operações mas desta vez de dentro da cadeia, sendo assim Stringer Bell, em liberdade, possui mais autonomia para gerir a organização do jeito que considera melhor",
   },
   {
     id: 3,
@@ -37,7 +37,7 @@ const people = [
       "https://dvdbash.files.wordpress.com/2013/06/the-wire-tv-series-s2-e01-02-dvdbash-wordpress.jpg?w=584&h=381",
     name: "Comissário Valchek na igreja de Baltimore",
     quote:
-      "Por conta de uma disputa envolvendo uma igreja da região, Valchek dá ordens para a força tarefa com seu genro, Prez, volte a ativa para investigar os estivadores",
+      "Por conta de uma disputa envolvendo uma igreja da região, Valchek dá ordens para a formação de uma unidade de investigação com seu genro, Prez, que em inúmeras ocasiões destacava a eficiência de suas operações",
   },
   {
     id: 6,
@@ -45,7 +45,7 @@ const people = [
       "https://dvdbash.files.wordpress.com/2013/06/the-wire-tv-series-s2-e08-05-dvdbash-wordpress.jpg?w=584&h=381",
     name: "Os gregos",
     quote:
-      "Responsáveis pelos carregamentos ilegais do porto de Baltimore, recebendo desde mercadorias clandestina como rádios e carros a drogas, possuem também ligações com tráfico humano",
+      "Responsáveis pelos carregamentos ilegais do porto de Baltimore, recebendo desde mercadorias clandestina como rádios e carros à drogas, possuem também ligações com tráfico humano",
   },
   {
     id: 7,

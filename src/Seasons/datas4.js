@@ -13,14 +13,15 @@ const people = [
       "https://dvdbash.files.wordpress.com/2013/06/the-wire-tv-series-s4-e12-05-dvdbash-wordpress.jpg?w=584&h=389",
     name: "Marlo e Snoop",
     quote:
-      "Principais rivais de Barksdale no controle do tráfico em Baltimore, Marlo parece sempre estar passos a frente dos outros",
+      "Principais rivais de Barksdale no controle do tráfico em Baltimore, Marlo parece sempre estar passos à frente dos outros",
   },
   {
     id: 3,
     image:
       "https://dvdbash.files.wordpress.com/2013/06/the-wire-tv-series-s4-e12-08-dvdbash-wordpress.jpg?w=848",
     name: "Proposition Joe",
-    quote: "",
+    quote:
+      "Líder do tráfico de drogas no oeste de Baltimore, possui conexões com os gregos, responsáveis pelas operações no porto da cidade",
   },
   {
     id: 4,
@@ -28,7 +29,7 @@ const people = [
       "https://dvdbash.files.wordpress.com/2013/06/the-wire-tv-series-s4-e03-06-dvdbash-wordpress.jpg?w=584&h=387",
     name: "Omar",
     quote:
-      "Momentos depois vemos a memorável cena de Omar indo comprar cereais matinais de pijama e metendo medo em todos na rua",
+      "Momentos antes da memorável cena na qual Omar vai a uma conveniência comprar cereais matinais de pijama e apenas sua presença pelas ruas é suficiente para afugentar todos os traficantes das proximidades",
   },
   {
     id: 5,
@@ -50,7 +51,7 @@ const people = [
     id: 7,
     image:
       "https://dvdbash.files.wordpress.com/2013/06/the-wire-tv-series-s4-e05-08-dvdbash-wordpress.jpg?w=584&h=389",
-    name: "Dr David Parenti",
+    name: "Dr David Parenti e Grace Sampson",
     quote:
       "Sociólogos conduzem uma pesquisa com corner kids, crianças tidas como problemáticas pelos professores e até mesmo pelas próprias familias",
   },
@@ -59,7 +60,8 @@ const people = [
     image:
       "https://dvdbash.files.wordpress.com/2013/06/the-wire-tv-series-s4-e06-06-dvdbash-wordpress.jpg?w=584&h=389",
     name: "Carcetti Prefeito",
-    quote: "",
+    quote:
+      "Após usar politicamente o desastroso cenário da segurança pública em Baltimore, Carcetti consegue se eleger prefeito após derrotar o atual prefeito da cidade nas primárias do partido democrata",
   },
   {
     id: 9,
@@ -67,7 +69,7 @@ const people = [
       "https://dvdbash.files.wordpress.com/2013/06/the-wire-tv-series-s4-e08-02-dvdbash-wordpress.jpg?w=584&h=389",
     name: "Bunny Colvin",
     quote:
-      "Outro expulso da polícia, este através da aposentadoria, Bunny é um dos membros da pesquisa feita com crianças consideradas problemáticas",
+      "Também expulso pela polícia, em seu caso através da aposentadoria, Bunny é um dos membros da pesquisa feita com crianças consideradas problemáticas",
   },
 ];
 

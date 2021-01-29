@@ -5,7 +5,7 @@ import { FiChevronRight, FiChevronLeft } from "react-icons/fi";
 import data from "./datas2";
 
 const Seasons = () => {
-  const [people, setPeople] = useState(data);
+  const [people] = useState(data);
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
@@ -21,7 +21,7 @@ const Seasons = () => {
   useEffect(() => {
     let slider = setInterval(() => {
       setIndex(index + 1);
-    }, 600000);
+    }, 12000);
     return () => clearInterval(slider);
   }, [index]);
 

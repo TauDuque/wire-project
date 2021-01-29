@@ -14,7 +14,7 @@ const people = [
     name:
       "O Comandante do distito oeste Bunny Colsin (a direita) e seu assistente",
     quote:
-      "Uma das coisas mais interessantes da temporada é a tentativa de Bunny de diminuir a criinalidade na sua região de comando autorizando o tráfico e uso de drogas apenas numa rua isolada e com as casas abandonadas, conhecida como Hamsterdam",
+      "Uma das coisas mais interessantes da temporada é a tentativa de Bunny de diminuir a criminalidade na sua região de comando autorizando o tráfico e uso de drogas apenas numa rua isolada e com as casas abandonadas, conhecida como Hamsterdam",
   },
   {
     id: 3,
@@ -86,7 +86,7 @@ const people = [
       "https://dvdbash.files.wordpress.com/2013/06/the-wire-tv-series-s3-e01-09-dvdbash-wordpress.jpg?w=584&h=391",
     name: "Poot e Boodie",
     quote:
-      "Insatisfeitos com o andamento dos negócios, Poot e Boodie assistem uma reunião de instrução de Striger no novo qg de Stringer, uma agência funerária",
+      "Insatisfeitos com o andamento dos negócios, Poot e Boodie assistem uma reunião de instrução de Striger no novo QG de Stringer, uma agência funerária",
   },
 ];
 
