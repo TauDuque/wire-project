@@ -1,58 +1,13 @@
 import "./App.css";
-import "./script";
 import Season1 from "./Seasons/Season1";
 import Season2 from "./Seasons/Season2";
-import Season3 from "./Seasons/Seanson3";
+import Season3 from "./Seasons/Season3";
 import Season4 from "./Seasons/Season4";
 import Season5 from "./Seasons/Season5";
 
 const Sections = () => {
   return (
     <div>
-      <section id="home">
-        <ul className="slide" id="sliding">
-          <li>
-            <span></span>
-          </li>
-          <li>
-            <span></span>
-          </li>
-          <li>
-            <span></span>
-          </li>
-          <li>
-            <span></span>
-          </li>
-          <li>
-            <span></span>
-          </li>
-          <li>
-            <span></span>
-          </li>
-          <li>
-            <span></span>
-          </li>
-          <li>
-            <span></span>
-          </li>
-          <li>
-            <span></span>
-          </li>
-          <li>
-            <span></span>
-          </li>
-          <li>
-            <span></span>
-          </li>
-          <li>
-            <span></span>
-          </li>
-          <li>
-            <span></span>
-          </li>
-        </ul>
-        <h2>the Wire Brasil</h2>
-      </section>
       <section id="primeira">
         <h1>Primeira Temporada</h1>
         <div className="sectioncontainer">

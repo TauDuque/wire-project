@@ -1,0 +1,2 @@
+export const OPEN_OVERLAY = "OPEN_OVERLAY";
+export const CLOSE_OVERLAY = "CLOSE_OVERLAY";

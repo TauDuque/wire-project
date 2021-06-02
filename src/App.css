@@ -155,7 +155,7 @@ nav ul {
 }
 
 nav ul {
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
   justify-content: stretch;
   list-style: none;
@@ -166,7 +166,7 @@ nav ul li {
   overflow: hidden;
 }
 
-nav li a {
+nav li h3 {
   position: relative;
   top: 45%;
   color: #fff;
@@ -177,11 +177,11 @@ nav li a {
   text-align: center;
 }
 
-nav li a:hover {
+nav li h3:hover {
   transform: scale(1.1);
 }
 
-nav li a::before {
+nav li h3::before {
   content: "";
   width: 25vw;
   height: 3px;
@@ -191,7 +191,7 @@ nav li a::before {
   left: 0;
   opacity: 0;
 }
-nav li a::after {
+nav li h3::after {
   content: "";
   width: 25vw;
   height: 3px;
@@ -202,11 +202,11 @@ nav li a::after {
   opacity: 0;
 }
 
-nav li a:hover::before {
+nav li h3:hover::before {
   opacity: 1;
 }
 
-nav li a:hover::after {
+nav li h3:hover::after {
   opacity: 1;
 }
 
@@ -308,20 +308,33 @@ nav li:nth-of-type(6) {
   transition: 0.4s;
 }
 
-/* Rotate first bar */
+.change {
+  display: none;
+}
+
+.close-bar {
+  position: fixed;
+  top: 0.4rem;
+  right: 2rem;
+  z-index: 10;
+  display: inline;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  color: var(--primaryColor);
+}
+
+/*  Rotações na primeira e terceira barra e esconder a segunda
 .change .bar1 {
   transform: rotate(-45deg) translate(-7px, 8px);
 }
-
-/* Fade out the second bar */
 .change .bar2 {
   opacity: 0;
 }
-
-/* Rotate last bar */
 .change .bar3 {
   transform: rotate(45deg) translate(-6px, -8px);
-}
+  
+} */
 
 /* --- Sections ------------------------------------ */
 
@@ -336,7 +349,7 @@ section {
   text-align: center;
 }
 section h1 {
-  margin-top: 3px;
+  margin-top: 15px;
   letter-spacing: 2px;
   text-transform: uppercase;
 }

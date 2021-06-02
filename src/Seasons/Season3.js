@@ -2,9 +2,9 @@ import React, { useState, useEffect } from "react";
 import "./Season.css";
 import "../App.css";
 import { FiChevronRight, FiChevronLeft } from "react-icons/fi";
-import data from "./dataS1";
+import data from "./datas3";
 
-const Season1 = () => {
+const Season3 = () => {
   const [people] = useState(data);
   const [index, setIndex] = useState(0);
 
@@ -26,8 +26,8 @@ const Season1 = () => {
   }, [index]);
 
   return (
-    <section id="primeira">
-      <h1>Primeira Temporada</h1>
+    <section id="terceira">
+      <h1>Terceira Temporada</h1>
       <div className="sectioncontainer">
         <article className="season">
           <section className="section-handler">
@@ -67,4 +67,4 @@ const Season1 = () => {
   );
 };
 
-export default Season1;
+export default Season3;
