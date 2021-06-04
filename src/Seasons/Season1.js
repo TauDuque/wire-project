@@ -28,41 +28,40 @@ const Season1 = () => {
   return (
     <section id="primeira">
       <h1>Primeira Temporada</h1>
-      <div className="sectioncontainer">
-        <article className="season">
-          <section className="section-handler">
-            <div className="section-center">
-              {people.map((person, personIndex) => {
-                const { id, name, image, quote } = person;
 
-                let position = "nextSlide";
-                if (personIndex === index) {
-                  position = "activeSlide";
-                }
-                if (
-                  personIndex === index - 1 ||
-                  (index === 0 && personIndex === people.length - 1)
-                ) {
-                  position = "lastIndex";
-                }
-                return (
-                  <article className={position} key={id}>
-                    <img src={image} alt={name} className="person-img" />
-                    <h4>{name}</h4>
-                    <p className="text">{quote}</p>
-                  </article>
-                );
-              })}
-              <button className="prev" onClick={() => setIndex(index - 1)}>
-                <FiChevronLeft />
-              </button>
-              <button className="next" onClick={() => setIndex(index + 1)}>
-                <FiChevronRight />
-              </button>
-            </div>
-          </section>
-        </article>
-      </div>
+      <article className="season">
+        <section className="section-handler">
+          <div className="section-center">
+            {people.map((person, personIndex) => {
+              const { id, name, image, quote } = person;
+
+              let position = "nextSlide";
+              if (personIndex === index) {
+                position = "activeSlide";
+              }
+              if (
+                personIndex === index - 1 ||
+                (index === 0 && personIndex === people.length - 1)
+              ) {
+                position = "lastIndex";
+              }
+              return (
+                <article className={position} key={id}>
+                  <img src={image} alt={name} className="person-img" />
+                  <h4>{name}</h4>
+                  <p className="text">{quote}</p>
+                </article>
+              );
+            })}
+            <button className="prev" onClick={() => setIndex(index - 1)}>
+              <FiChevronLeft />
+            </button>
+            <button className="next" onClick={() => setIndex(index + 1)}>
+              <FiChevronRight />
+            </button>
+          </div>
+        </section>
+      </article>
     </section>
   );
 };

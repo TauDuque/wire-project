@@ -98,8 +98,7 @@ Slider
 */
 
 .section-center {
-  margin: 0 auto;
-  margin-top: 4rem;
+  margin-top: 6rem;
   width: 80vw;
   /* have to have a height */
   height: 450px;
@@ -218,8 +217,8 @@ article.nextSlide {
 
 .season {
   background: #fff;
-  height: 85vh;
-  margin-bottom: 1px;
+  height: 90vh;
+  margin-bottom: 15px;
   padding: 1.5rem 2rem;
   border-radius: 0.25rem;
   box-shadow: 0 8px 15px rgba(5, 5, 5, 0.7);
